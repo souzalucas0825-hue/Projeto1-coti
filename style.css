@@ -1,0 +1,151 @@
+/*Propriedade: valor;*/
+
+* {
+
+    margin: 0;
+    /*seleciona todos os elementos*/
+}
+
+
+body {
+
+    font-family: "Barlow", sans-serif;
+}
+
+
+.fundo {
+
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/background.webp);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    /*largura*/
+    height: 100vh;
+    /* View Height -> Unidade de medida baseada na altura do navegador*/
+
+
+    display: flex;
+    align-items: center;
+    /* Verticalmente centralizado*/
+    justify-content: center;
+    /* horizontalmente centralizado*/
+
+}
+
+.conteudo {
+
+    width: 95%;
+    max-width: 1259px;
+    height: auto;
+
+    display: flex;
+    /* habilita o uso do flexbox*/
+    align-items: center;
+    /* alinha verticalmente*/
+    column-gap: 24px;
+
+    color: #FFFFFF;
+
+
+}
+
+.imagem {
+
+    /* sombra horizontal, vertical, suavidade,cor*/
+    box-shadow: 5px 5px 20px black;
+}
+
+
+h1 {
+
+    color: #FFFFFF;
+    /*cor da fonte*/
+    font-size: 50px;
+    /*tamanho da font*/
+    margin-bottom: 12px;
+}
+
+h2 {
+
+    font-size: 24px;
+    margin-top: 26px;
+    margin-bottom: 12px;
+
+}
+
+
+p {
+    font-size: 20px;
+}
+
+
+.genero {
+
+    font-size: 18px;
+}
+
+/* Selecionando o strong que esta dentro do genero*/
+.genero strong {
+
+    color: aqua;
+}
+
+a {
+
+
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 48px;
+    text-decoration: none;
+    /* retira o sublinhado do link*/
+
+
+
+    padding: 18px 60px;
+    /*vertical (top/bottom) horizontal (left/rigth)*/
+    /*padding-bottom: 18px
+    padding-left: 60px
+    padding-rigth: 60px*/
+
+    border: 1px #FFFFFF;
+    /*border-color: #FFFFFF
+    border-style: solid;
+    border-width: 1px*/
+
+    border-radius: 10px;
+    border: 1px #FFFFFF solid;
+    /* border-color: #FFFFFF
+    border-style: solid
+    border-width: 1px*/
+
+}
+
+/* ao passar o mouse*/
+a:hover {
+
+    background-color: rgba(0, 0, 0, 0.432);
+    color: #00F2FF;
+    border-color: #00F2FF;
+
+
+}
+
+
+
+/* condição para alterar o projeto mediante a largura da tela*/
+
+@media (max-width: 780px) {
+
+
+    .imagem {
+        display: none;
+    }
+
+    h1 {
+
+        color: #ff0000;
+    }
+
+
+}
